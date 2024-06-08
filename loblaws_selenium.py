@@ -42,13 +42,14 @@ for product_card in product_cards:
     # append the price and product name in a dictionary
     product_dict[name_raw]=price
 
+print(product_dict)
 # next step is to handle the pagination, and store the info in a db
 
 #helper function
 ##driver.page_source ->get the full html
-# f = open("html.txt", "w")
-# f.write(driver.page_source)
-# f.close()
+f = open("html.txt", "w")
+f.write(driver.page_source)
+f.close()
 
 
 driver.quit()
